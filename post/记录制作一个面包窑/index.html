@@ -1,0 +1,286 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>记录制作一个面包窑 | Hello，俊杰</title>
+
+<link rel="shortcut icon" href="https://dgjj1991.github.io/favicon.ico?v=1749544382587">
+
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://dgjj1991.github.io/styles/main.css">
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css"> -->
+
+<script src="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets/highlight.min.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/highlight.js/9.12.0/languages/dockerfile.min.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/highlight.js/9.12.0/languages//dart.min.js"></script>
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/moment@2.27.0/moment.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js"></script> -->
+<!-- DEMO JS -->
+<!--<script src="media/scripts/index.js"></script>-->
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-47839991-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+    gtag('config', 'UA-47839991-1');
+</script>
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.css">
+    
+</head>
+<body>
+<div class="main gt-bg-theme-color-first">
+    <nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="/">
+        <img class="user-avatar" src="/images/avatar.png" alt="头像">
+        <div class="site-name gt-c-content-color-first">
+            Hello，俊杰
+        </div>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" id="changeNavbar">
+        <i class="fas fa-bars gt-c-content-color-first" style="font-size: 18px"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav mr-auto" style="text-align: center">
+            
+            <div class="nav-item">
+                
+                <a href="/" class="menu gt-a-link">
+                    首页
+                </a>
+                
+            </div>
+            
+            <div class="nav-item">
+                
+                <a href="/archives" class="menu gt-a-link">
+                    归档
+                </a>
+                
+            </div>
+            
+            <div class="nav-item">
+                
+                <a href="/tags" class="menu gt-a-link">
+                    标签
+                </a>
+                
+            </div>
+            
+            <div class="nav-item">
+                
+                <a href="/post/about" class="menu gt-a-link">
+                    关于
+                </a>
+                
+            </div>
+            
+        </div>
+        <div style="text-align: center">
+            <form id="gridea-search-form" style="position: relative" data-update="1749544382587"
+                action="/search/">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
+                <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
+            </form>
+        </div>
+    </div>
+</nav>
+<script>
+    /* 移动端导航栏展开/收起切换 */
+    document.getElementById('changeNavbar').onclick = () => {
+        var element = document.getElementById('navbarSupportedContent');
+        if (element.style.display === 'none' || element.style.display === '') {
+            element.style.display = 'block';
+        } else {
+            element.style.display = 'none';
+        }
+    }
+
+</script>
+
+    <div class="post-container">
+        <div class="post-detail gt-bg-theme-color-second">
+            <article class="gt-post-content">
+                <h2 class="post-title">
+                    记录制作一个面包窑
+                </h2>
+                <div class="post-info">
+                    <time class="post-time gt-c-content-color-first">
+                        · 2022-03-01 ·
+                    </time>
+                    
+                        <a href="https://dgjj1991.github.io/tag/ri-chang-ji-lu/" class="post-tags">
+                            # 日常记录
+                        </a>
+                    
+                </div>
+                <div class="post-content">
+                    <p>机缘巧合之下做了一个面包窑，感觉很有意思。记录一下制作的过程，有机会可以再去做一个，看有没有机会做成一个参与式学习的项目。因为面包窑的制作已经有很多详细的介绍了，我主要记录一下我在做的这个过程中的拓展思考（非制作拓展，主要是可以衍生了解的）</p>
+<p>在著名的李子柒的面包窑视频中可以看到她学习的视频就是<a href="http://www.permaculture.org.tw/">台灣樸門永續發展協會)</a>（朴门）的教学视频。这种面包窑有一个基本的设计概念叫做“永续生活”。</p>
+<p>关于永续生活：这是一种可持续的生活方式。永续这个词最早出现在1987年联合国世界环境与发展委员会所发表的<a href="http://www.un-documents.net/our-common-future.pdf">《我们共同的未来(Our Common Future)》</a>。永续发展是联合国在2015年发表的<a href="https://npost.tw/archives/24078">《翻转我们的世界:2030年永续发展方针》</a>原文链接已经失效，这是台湾一个公益资讯平台的，其中公布了<a href="https://sdgs.un.org/zh/goals">17项永续发展目标(Sustainable Development Goals, SDGs)</a></p>
+<p>好了，说远了。这里面有太多的内容了，比如说：人与土地、人与当地、人与邻居等等。这个如果有合适的机会在去找资料。当然设计一个面包窑需要的工程知识，这里也不做过多的记录。在制作每一个流程可以单独的拓展一下。</p>
+<p>一般来说面包窑分为砖窑和土窑，这里说的是土窑（也是永续生活里面提倡的一种做法）</p>
+<h1 id="一-制作地基">一、制作地基</h1>
+<p>相对于以前这种复杂的地基，现在基本上采用下图这种简单的地基。</p>
+<figure data-type="image" tabindex="1"><img src="https://s2.loli.net/2022/02/23/ZnOjGYhP7EBNKlF.jpg" alt="简单地基" loading="lazy"></figure>
+<h2 id="1修建底座">1.修建底座</h2>
+<p>我去的当天已经有当地师傅准备好了原材料，所以我是从修建地基开始的。</p>
+<figure data-type="image" tabindex="2"><img src="https://s2.loli.net/2022/02/23/Y4GuayDZI8RTc1b.jpg" alt="修地基" loading="lazy"></figure>
+<p>地基主要是用砖和水泥板，修好后是这个样子的。<br>
+<img src="https://s2.loli.net/2022/02/23/7zKleoibFha49Lx.jpg" alt="修好后的地基" loading="lazy"></p>
+<h2 id="2凹槽">2.凹槽</h2>
+<p>接在要在上面修建一个凹槽，用于接下来的修建。大概三匹砖的高度。凹槽之中，会依次填入保温材料。</p>
+<p>拓展：如果是带比较小的体验活动，这个地基建设步骤可以略过。比较耗时，也比较考验技术（参与度也不好调整）如果是带大一点的小朋友，这个过程中可以涉及到<strong>原材料的采购、建筑用料的估算、原材料的选择</strong>。这其中又需要和永续生活的倡导相结合。</p>
+<h1 id="二-土窑窑体结构">二、土窑窑体结构</h1>
+<p>修完过后就是面包窑的主题结构了，就是热质层（里层）、保温层（中层）、结构层（外层）之类的了。</p>
+<figure data-type="image" tabindex="3"><img src="https://s2.loli.net/2022/02/23/kRjprHN8ntGlIhT.jpg" alt="结构图" loading="lazy"></figure>
+<h2 id="1热质层-里">1.热质层 （里）</h2>
+<figure data-type="image" tabindex="4"><img src="https://s2.loli.net/2022/03/01/7pZtTLN4EHzxef5.jpg" alt="image" loading="lazy"></figure>
+<p>烘焙食物的那一层，这层能够积蓄热量；通过内壁吸收的热量，利用热辐射将食物烘焙熟。</p>
+<p>结构：黏土＋沙子</p>
+<h2 id="2保温层中">2.保温层（中）</h2>
+<figure data-type="image" tabindex="5"><img src="https://s2.loli.net/2022/03/01/hRbI6QwaiemFU35.jpg" alt="image" loading="lazy"></figure>
+<p>能够将热质层所积蓄的热量，保存一定时间。让窑体在一定时间内，维持较高的温度。</p>
+<p>结构：黏土＋空酒瓶</p>
+<h2 id="3结构层外">3.结构层（外）</h2>
+<figure data-type="image" tabindex="6"><img src="https://s2.loli.net/2022/03/01/ke1VpaHKnWcUSxb.jpg" alt="image" loading="lazy"></figure>
+<p>也就是最外面那一层，也称为“稻草层”；为了防止黏土开裂，且成块儿脱落。在黏土中加入稻草杆段儿，让它们之间相互牵拉，以免脱落。</p>
+<p>结构：黏土＋稻草</p>
+<p>窑体按照上面的方式搭建，基本能保证它的蓄热能力。</p>
+<figure data-type="image" tabindex="7"><img src="https://s2.loli.net/2022/03/01/JXfa4ZlSvhuqtAc.jpg" alt="image" loading="lazy"></figure>
+<p>等待干燥过后，再经过烧窑就可以使用了。</p>
+<p>拓展：窑内的温度如何？如何调整窑内温度的高低？各种食物对温度的要求？以及常见陶器所需要的温度？为什么保温材料是玻璃瓶？稻草+土的粘合组合详解？</p>
+<h2 id="面包窑需要提前准备的">面包窑需要提前准备的：</h2>
+<p>1、主要准备材料：砖，水泥，水泥预制板，黏土，沙，稻草，空酒瓶、木块等</p>
+<p>2、主要准备工具：切砖刀、撬、钉子、锯子、锤子等</p>
+<h2 id="想要继续去了解的一些问题">想要继续去了解的一些问题：</h2>
+<p>1、土<br>
+这真的是一个大的探讨问题：地球分为陆地和海洋；我们都生在土地上，我们吃的庄稼也是土里生长出来的、放在也盖在土上面。这些土都叫做土吗？每一种土都叫做什么名字？分别用来干什么呢？土会不会被污染？如果被污染了，要怎么净化呢？</p>
+<p><img src="https://s2.loli.net/2022/03/01/1XPG9TtUgB3CWhf.png" alt="image" loading="lazy"><br>
+土壤质地三角形</p>
+<p>2、燃烧材料之树木<br>
+现在主要是用电，对于烹饪食物和取暖的木头现在了解的比较少。如果是露营这些知识也比较好用，想要多了解一些。</p>
+<p>鼓励我继续写作吧</p>
+<figure data-type="image" tabindex="8"><img src="https://s2.loli.net/2022/02/22/ZDYHoFO67iBagyV.jpg" alt="" loading="lazy"></figure>
+
+                </div>
+            </article>
+        </div>
+
+        
+            <div class="next-post">
+                <div class="next gt-c-content-color-first">下一篇</div>
+                <a href="https://dgjj1991.github.io/post/建博客的心酸历程/" class="post-title gt-a-link">
+                    建博客的心酸历程
+                </a>
+            </div>
+        
+
+        
+
+        
+            
+                <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
+<script>
+    // md5.min.js
+    !function(n){
+        "use strict";
+        function d(n,t){var r=(65535&n)+(65535&t);return(n>>16)+(t>>16)+(r>>16)<<16|65535&r}
+        function f(n,t,r,e,o,u){return d((c=d(d(t,n),d(e,u)))<<(f=o)|c>>>32-f,r);var c,f}
+        function l(n,t,r,e,o,u,c){return f(t&r|~t&e,n,t,o,u,c)}
+        function v(n,t,r,e,o,u,c){return f(t&e|r&~e,n,t,o,u,c)}
+        function g(n,t,r,e,o,u,c){return f(t^r^e,n,t,o,u,c)}
+        function m(n,t,r,e,o,u,c){return f(r^(t|~e),n,t,o,u,c)}
+        function i(n,t){var r,e,o,u,c;n[t>>5]|=128<<t%32,n[14+(t+64>>>9<<4)]=t;var f=1732584193,i=-271733879,a=-1732584194,h=271733878;for(r=0;r<n.length;r+=16)f=l(e=f,o=i,u=a,c=h,n[r],7,-680876936),h=l(h,f,i,a,n[r+1],12,-389564586),a=l(a,h,f,i,n[r+2],17,606105819),i=l(i,a,h,f,n[r+3],22,-1044525330),f=l(f,i,a,h,n[r+4],7,-176418897),h=l(h,f,i,a,n[r+5],12,1200080426),a=l(a,h,f,i,n[r+6],17,-1473231341),i=l(i,a,h,f,n[r+7],22,-45705983),f=l(f,i,a,h,n[r+8],7,1770035416),h=l(h,f,i,a,n[r+9],12,-1958414417),a=l(a,h,f,i,n[r+10],17,-42063),i=l(i,a,h,f,n[r+11],22,-1990404162),f=l(f,i,a,h,n[r+12],7,1804603682),h=l(h,f,i,a,n[r+13],12,-40341101),a=l(a,h,f,i,n[r+14],17,-1502002290),f=v(f,i=l(i,a,h,f,n[r+15],22,1236535329),a,h,n[r+1],5,-165796510),h=v(h,f,i,a,n[r+6],9,-1069501632),a=v(a,h,f,i,n[r+11],14,643717713),i=v(i,a,h,f,n[r],20,-373897302),f=v(f,i,a,h,n[r+5],5,-701558691),h=v(h,f,i,a,n[r+10],9,38016083),a=v(a,h,f,i,n[r+15],14,-660478335),i=v(i,a,h,f,n[r+4],20,-405537848),f=v(f,i,a,h,n[r+9],5,568446438),h=v(h,f,i,a,n[r+14],9,-1019803690),a=v(a,h,f,i,n[r+3],14,-187363961),i=v(i,a,h,f,n[r+8],20,1163531501),f=v(f,i,a,h,n[r+13],5,-1444681467),h=v(h,f,i,a,n[r+2],9,-51403784),a=v(a,h,f,i,n[r+7],14,1735328473),f=g(f,i=v(i,a,h,f,n[r+12],20,-1926607734),a,h,n[r+5],4,-378558),h=g(h,f,i,a,n[r+8],11,-2022574463),a=g(a,h,f,i,n[r+11],16,1839030562),i=g(i,a,h,f,n[r+14],23,-35309556),f=g(f,i,a,h,n[r+1],4,-1530992060),h=g(h,f,i,a,n[r+4],11,1272893353),a=g(a,h,f,i,n[r+7],16,-155497632),i=g(i,a,h,f,n[r+10],23,-1094730640),f=g(f,i,a,h,n[r+13],4,681279174),h=g(h,f,i,a,n[r],11,-358537222),a=g(a,h,f,i,n[r+3],16,-722521979),i=g(i,a,h,f,n[r+6],23,76029189),f=g(f,i,a,h,n[r+9],4,-640364487),h=g(h,f,i,a,n[r+12],11,-421815835),a=g(a,h,f,i,n[r+15],16,530742520),f=m(f,i=g(i,a,h,f,n[r+2],23,-995338651),a,h,n[r],6,-198630844),h=m(h,f,i,a,n[r+7],10,1126891415),a=m(a,h,f,i,n[r+14],15,-1416354905),i=m(i,a,h,f,n[r+5],21,-57434055),f=m(f,i,a,h,n[r+12],6,1700485571),h=m(h,f,i,a,n[r+3],10,-1894986606),a=m(a,h,f,i,n[r+10],15,-1051523),i=m(i,a,h,f,n[r+1],21,-2054922799),f=m(f,i,a,h,n[r+8],6,1873313359),h=m(h,f,i,a,n[r+15],10,-30611744),a=m(a,h,f,i,n[r+6],15,-1560198380),i=m(i,a,h,f,n[r+13],21,1309151649),f=m(f,i,a,h,n[r+4],6,-145523070),h=m(h,f,i,a,n[r+11],10,-1120210379),a=m(a,h,f,i,n[r+2],15,718787259),i=m(i,a,h,f,n[r+9],21,-343485551),f=d(f,e),i=d(i,o),a=d(a,u),h=d(h,c);return[f,i,a,h]}
+        function a(n){var t,r="",e=32*n.length;for(t=0;t<e;t+=8)r+=String.fromCharCode(n[t>>5]>>>t%32&255);return r}
+        function h(n){var t,r=[];for(r[(n.length>>2)-1]=void 0,t=0;t<r.length;t+=1)r[t]=0;var e=8*n.length;for(t=0;t<e;t+=8)r[t>>5]|=(255&n.charCodeAt(t/8))<<t%32;return r}
+        function e(n){var t,r,e="0123456789abcdef",o="";for(r=0;r<n.length;r+=1)t=n.charCodeAt(r),o+=e.charAt(t>>>4&15)+e.charAt(15&t);return o}
+        function r(n){return unescape(encodeURIComponent(n))}
+        function o(n){return a(i(h(t=r(n)),8*t.length));var t}
+        function u(n,t){return function(n,t){var r,e,o=h(n),u=[],c=[];for(u[15]=c[15]=void 0,16<o.length&&(o=i(o,8*n.length)),r=0;r<16;r+=1)u[r]=909522486^o[r],c[r]=1549556828^o[r];return e=i(u.concat(h(t)),512+8*t.length),a(i(c.concat(e),640))}(r(n),r(t))}
+        function t(n,t,r){return t?r?u(t,n):e(u(t,n)):r?o(n):e(o(n))}
+        "function"==typeof define&&define.amd?define(function(){return t}):"object"==typeof module&&module.exports?module.exports=t:n.md5=t;
+    }(this);
+</script>
+
+
+<div id="gitalk-container"></div>
+
+<script>
+
+  var gitalk = new Gitalk({
+    clientID: '691a89b2df1d12353bc1',
+    clientSecret: 'c4bc93f60ce78d68baf9e0bcb663d7a80666214e',
+    repo: 'dgjj1991.github.io',
+    owner: 'dgjj1991',
+    admin: ['dgjj1991'],
+    id: md5(location.pathname),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false       // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
+
+</script>
+
+            
+
+            
+        
+
+        
+
+        <div class="site-footer gt-c-content-color-first">
+    <div class="slogan gt-c-content-color-first"></div>
+    <div class="social-container">
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    </div>
+    <div class="footer-info">
+        <div>
+        请我喝杯咖啡吧
+  <a href="https://afdian.com/a/jjhuang" target="_blank">支持中国地区</a>
+  <a href="https://www.paypal.com/paypalme/520junjie" target="_blank">支持国际地区</a>
+    </div>
+    </div>
+    <div>
+        Theme <a href="https://github.com/imhanjie/gridea-theme-pure" target="_blank">Pure</a>, Powered by <a
+                href="https://gridea.dev" target="_blank">Gridea</a> | <a href="https://dgjj1991.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+ <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  文章阅读<span id="busuanzi_value_page_pv"></span>次
+  站点被访<span id="busuanzi_value_site_pv"></span>次
+  站点访客<span id="busuanzi_value_site_uv"></span>人
+
+</div>
+
+
+
+    </div>
+</div>
+</body>
+</html>
